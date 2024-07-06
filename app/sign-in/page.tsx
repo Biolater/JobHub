@@ -31,7 +31,6 @@ const Signin = () => {
         });
         if (isSignedIn) {
           toast.success("Sign In Successful");
-          router.push("/home-page");
         }
         setLoading(false);
       } catch (error) {

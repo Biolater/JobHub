@@ -3,7 +3,6 @@ import { NextRequest } from "next/server";
 
 export async function middleware(request: NextRequest) {
   const isLoggedIn = request.cookies.get("isLoggedIn");
-  console.log(request.nextUrl.pathname);
   if (
     isLoggedIn?.value === "false" &&
     request.nextUrl.pathname !== "/sign-up" &&

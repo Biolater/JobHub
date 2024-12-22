@@ -8,7 +8,6 @@ Amplify.configure(outputs);
 const App = () => {
   return (
     <main className="h-screen flex items-center justify-center">
-      <Authenticator />;
     </main>
   );
 };
